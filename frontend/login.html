@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Advising Schedule Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Advising Schedule Planner</h1>
+
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <form id="loginForm">
+            <label>Email:</label><br>
+            <input id="loginEmail" type="email" placeholder="Enter your email" required><br><br>
+
+            <label>Password:</label><br>
+            <input id="loginPassword" type="password" placeholder="Enter your password" required><br><br>
+
+            <label>Role:</label><br>
+            <select id="loginRole" required>
+                <option value="student">Student</option>
+                <option value="advisor">Advisor</option>
+            </select><br><br>
+
+            <button type="submit">Log In</button>
+        </form>
+
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

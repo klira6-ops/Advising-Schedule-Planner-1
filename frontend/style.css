@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to bottom, #7bbcf7 160px, #ffffff 200px);
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h1 {
+    color: navy;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 400px;
+}
+
+.colored-box{
+    background-color: #bbd6ff;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 400px;
+
+    overflow-wrap: break-word;
+}
+.colored-box p {
+    margin: 0;
+    text-align: left;
+}
+
+#queueList {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-left: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #bbd6ff;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.login-container h2 {
+     margin-top: 0;
+}

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Advising Schedule Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Advising Schedule Planner</h1>
+
+    <div class="login-container">
+        <h2>Register</h2>
+
+        <form id="registerForm">
+            <label>Name:</label><br>
+            <input id="regName" type="text" required><br><br>
+
+            <label>Email:</label><br>
+            <input id="regEmail" type="email" required><br><br>
+
+            <label>Password:</label><br>
+            <input id="regPassword" type="password" required minlength="6"><br><br>
+
+            <label>Role:</label><br>
+            <select id="regRole" required>
+                <option value="student">Student</option>
+                <option value="advisor">Advisor</option>
+            </select><br><br>
+
+            <label>Phone (advisors only):</label><br>
+            <input id="regPhone" type="tel"><br><br>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
