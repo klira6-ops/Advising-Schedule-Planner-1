@@ -10,8 +10,8 @@ app.use(express.json());
 // Database connection pool
 const db = mysql.createPool({
     host: "localhost",          // ← just the hostname
-    user: "",
-    password: "",
+    user: "root",
+    password: "lucky123",
     database: "advising_schedule_planner_db",
     waitForConnections: true,
     connectionLimit: 10
