@@ -1,4 +1,15 @@
 const registerForm = document.getElementById("registerForm");
+const regRole = document.getElementById("regRole");
+const advisorFields = document.getElementById("advisorFields");
+
+// Dynamic UI toggle: Show phone and specialization only if role is 'advisor'
+regRole.addEventListener("change", () => {
+    if (regRole.value === "advisor") {
+        advisorFields.style.display = "block";
+    } else {
+        advisorFields.style.display = "none";
+    }
+});
 
 registerForm.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -7,8 +18,9 @@ registerForm.addEventListener("submit", async (event) => {
         name: document.getElementById("regName").value,
         email: document.getElementById("regEmail").value,
         password: document.getElementById("regPassword").value,
-        role: document.getElementById("regRole").value,
-        phone: document.getElementById("regPhone").value
+        role: regRole.value,
+        phone: document.getElementById("regPhone").value,
+        specialization: document.getElementById("regSpecialization").value // Captured here
     };
 
     try {

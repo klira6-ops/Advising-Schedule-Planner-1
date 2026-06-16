@@ -85,7 +85,16 @@ async function loadAdvisors() {
         const response = await fetch("http://localhost:3000/advisors");
         const advisors = await response.json();
         const select = document.getElementById("advisor");
-        select.innerHTML = "";
+        select.innerHTML = ""; // Clears the hardcoded HTML placeholders
+
+        if (advisors.length === 0) {
+            const option = document.createElement("option");
+            option.value = "";
+            option.textContent = "No advisors available. Please register one.";
+            select.appendChild(option);
+            return;
+        }
+
         advisors.forEach(adv => {
             const option = document.createElement("option");
             option.value = adv.advisor_name;

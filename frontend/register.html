@@ -28,8 +28,17 @@
                 <option value="advisor">Advisor</option>
             </select><br><br>
 
-            <label>Phone (advisors only):</label><br>
-            <input id="regPhone" type="tel"><br><br>
+            <div id="advisorFields" style="display: none;">
+                <label>Phone:</label><br>
+                <input id="regPhone" type="tel"><br><br>
+
+                <label>Advising Specialization:</label><br>
+                <select id="regSpecialization">
+                    <option value="General">General Advising</option>
+                    <option value="Counseling">Counseling</option>
+                    <option value="Graduation">Graduation</option>
+                </select><br><br>
+            </div>
 
             <button type="submit">Register</button>
         </form>

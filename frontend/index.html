@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="sessionStorage.clear(); window.location.href='login.html';" style="float: right;">
+
+    <button class="logout-btn" onclick="sessionStorage.clear(); window.location.href='login.html';">
         Log Out
     </button>
+
     <h1>Advising Schedule Planner</h1>
 
     <h3>Prepared By:</h3>
@@ -17,14 +19,16 @@
 
     <div class="colored-box">
         <p>
-            Enter the relevant information in the form to the left.
-            <br>After that appointment will be saved and the advisor will meet at the chosen time.
-            <br>For questions regarding any advising issues contact your school.
+            Enter the relevant information in the form below.
+            <br>After that, the appointment will be saved and the advisor will meet with the student at the chosen time.
+            <br>For questions regarding advising issues, contact your school.
         </p>
     </div>
 
     <h2>Student Appointment Request</h2>
-    <div style="display: flex; align-items: flex-start; gap:150px;">
+
+    <div class="main-container">
+
         <form id="appointmentForm">
 
             <label>Name:</label><br>
@@ -40,8 +44,8 @@
                 <option value="Advisor 3">Advisor 3</option>
             </select><br><br>
 
-            <label>Appointment Time:</label><br>
-            <input id="appointmentTime" type="datetime-local" required><br><br>
+<label>Appointment Date & Time:</label><br>
+<input id="appointmentTime" type="datetime-local" required><br><br>
 
             <label>Priority:</label><br>
             <select id="priority" required>
@@ -63,5 +67,5 @@
 
     <script src="script.js"></script>
 
-    </body>
+</body>
 </html>
